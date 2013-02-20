@@ -1,0 +1,87 @@
+<!doctype html>
+<!--<link rel="stylesheet" type="text/css" href="client.css">-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="client.js"></script>
+<!-- login page -->
+<center>
+<div id="login">
+  <h1>Login</h1>
+  <div id="loginMessage">
+  </div>
+
+    <form>
+    <fieldset id="inputs">
+        <input id="username" type="text" placeholder="Username">   
+        <input id="password" type="password" placeholder="Password">
+    </fieldset>
+    <fieldset id="actions">
+        <input type="submit" id="loginButton" value="Log in">
+	<input type="submit" id="addUserButton" value="Add User">
+    </fieldset>
+    </form>
+</div>
+
+</center>
+
+
+<!-- Welcome page -->
+<center>
+<div id="welcome">
+  <h1>Welcome!</h1>
+  <div id ="welcomeMessage">
+   </div>
+  
+    
+    <form>
+    <fieldset id="inputs">
+        <input id="username" type="text" placeholder="Username">   
+        <input id="password" type="password" placeholder="Password">
+    </fieldset>
+    <fieldset id="actions">
+        <input type="submit" id="logOut" value="Log out">
+    </fieldset>
+    </form>
+</div>
+</center>
+
+
+ 
+<script type="text/javascript">
+<!--
+
+
+$(document).ready(function() {
+   loginPage('default');
+ });
+
+function loginPage(message) {
+  $('#login').hide()
+  $('#welcome').hide()
+  $('#username').val("")
+  $('#password').val("")
+  $('#loginMessage').html("")
+  $('#welcomeMessage').html("")
+  //init login page
+  if(message == 'default')message = "Please enter your credentials below";
+     $('#welcome').hide()
+     $('#loginUsername').val("")
+     $('#loginPassword').val("")
+     $('#loginMessage').html(message)
+     $('#login').show()
+}
+
+function welcomePage(username, count) {
+  $('#login').hide()
+  $('#welcome').show()
+  $('#welcomeMessage').html("Welcome, "+  username +", you have logged in " + count + " times.")
+
+}
+
+
+
+  
+
+-->
+</script>
+</html>

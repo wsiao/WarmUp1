@@ -5,6 +5,8 @@ import json
 import StringIO
 import cL.unitTests
 import unittest
+from django.shortcuts import render_to_response
+from django.template import RequestContext
 
 
 #Error codes
@@ -13,6 +15,11 @@ ERR_BAD_CREDENTIALS = -1
 ERR_USER_EXISTS = -2
 ERR_BAD_USERNAME = -3 
 ERR_BAD_PASSWORD = -4
+
+@csrf_exempt
+def frontPage(request):
+    return render_to_response('frontEnd.html',{},context_instance=RequestContext(request))
+
 
 @csrf_exempt
 def login(request):
