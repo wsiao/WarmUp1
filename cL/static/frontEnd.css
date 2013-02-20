@@ -13,10 +13,10 @@
     margin: 100px auto;
 }
 
-.message {
+/**.message {
     margin: 10px 20px 10px 20px;
     border: thin black solid;
-}
+}**/ 
 
 body {
 	background: #000;
