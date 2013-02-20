@@ -3,8 +3,8 @@
 
 .box {
     width: 300px;
-    height: 200px;
-    border: thin black solid;
+    height: 300px;
+    border: thick black solid;
     background-color: rgb(243,243,243);
 }
 
