@@ -6,6 +6,11 @@
     height: 300px;
     border: thick black solid;
     background-color: rgb(243,243,243);
+    padding: 10px 12px 12px 10px;	
+	-moz-box-shadow: 10px 10px 10px rgba(0,0,0,1) inset, -9px -9px 8px rgba(0,0,0,1) inset;
+	-webkit-box-shadow: 8px 8px 8px rgba(0,0,0,1) inset, -9px -9px 8px rgba(0,0,0,1) inset;
+	box-shadow: 8px 8px 8px rgba(0,0,0,1) inset, -9px -9px 8px rgba(0,0,0,1) inset;
+    margin: 100px auto;
 }
 
 .message {
