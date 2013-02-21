@@ -15,12 +15,18 @@
 
 input[type="submit"] {
 background: #212121;
-width:120px;
 color: #999;
 padding: 5px 10px;
 margin: 20px 0;
 border: 1px solid #000;
 font-weight: lighter;
+}
+
+input[type="password"] {
+background: #212121;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+ border-radius: 5px;
 }
 
 input[type="text"] {
