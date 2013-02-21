@@ -18,7 +18,7 @@ input[type="submit"] {
 background: #000;
 color: #808080;
 padding: 5px 10px;
-margin: 20px 0;
+margin: 10px 0;
 width:75px;
 font-weight: lighter;
 border: 1px solid white;
@@ -29,7 +29,7 @@ border: 1px solid white;
 
 input[type="password"] {
 background: #000;
-margin: 10px 0;
+margin: 5px 0;
 color: #808080;
 border: 1px solid white;
 -moz-border-radius: 5px;
