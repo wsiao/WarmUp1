@@ -19,8 +19,9 @@ background: #000;
 color: #999;
 padding: 5px 10px;
 margin: 20px 0;
+width:120px;
 font-weight: lighter;
-border: 1px solid #000;
+border: 1px solid white;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
  border-radius: 5px;
@@ -28,6 +29,7 @@ border: 1px solid #000;
 
 input[type="password"] {
 background: #000;
+color: #999
 border: 1px solid white;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
@@ -36,15 +38,15 @@ border: 1px solid white;
 
 input[type="text"] {
 background: #000;
+color: #999
 border: 1px solid white;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
  border-radius: 5px;
 }
-/**.message {
+.message {
     margin: 10px 20px 10px 20px;
-    border: thin black solid;
-}**/ 
+}
 
 body {
 	background: #000;
