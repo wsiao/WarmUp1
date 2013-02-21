@@ -1,7 +1,7 @@
 /* This file contains the style parameters for the sample client. */
 
 
-.box {
+.UI {
     width: 300px;
     height: 240px;
     border: thin white solid;
@@ -44,7 +44,7 @@ border: 1px solid white;
 -webkit-border-radius: 5px;
  border-radius: 5px;
 }
-.message {
+.txt {
     margin: 5px 20px 5px 20px;
 }
 

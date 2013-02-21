@@ -6,9 +6,9 @@
 <!-- login page -->
 <center>
 
-<div id="login" class="box">
+<div id="login" class="UI">
   <h2>Login</h2>
-  <div id="loginMessage" class="message">
+  <div id="loginMessage" class="txt">
   </div>
 
     <form>
@@ -32,9 +32,9 @@
 
 <!-- Welcome page -->
 <center>
-<div id="welcome" class="box">
+<div id="welcome" class="UI">
   <h2>Welcome!</h2>
-  <div id ="welcomeMessage" class="message">
+  <div id ="welcomeMessage" class="txt">
    </div>
   
     
@@ -99,10 +99,10 @@ function request(page, dict, success, failure) {
 function errcode(code) {
     if( code == ERR_BAD_CREDENTIALS) {
         return ("Invalid credentials. Please try again. ");
-    } else if( code == ERR_BAD_USERNAME) {
-        return ("Invalid Username.  Usernames should not be empty and have, at most, 128 characters. Please try again.");
     } else if( code == ERR_USER_EXISTS) {
         return ("This username already exists!");
+    } else if( code == ERR_BAD_USERNAME) {
+        return ("Invalid Username.  Usernames should not be empty and have, at most, 128 characters. Please try again.");;
     } else if( code == ERR_BAD_PASSWORD) {
         return ("Invalid Password. Passwords should be at most 128 characters long. Please try again");
     } 
