@@ -33,7 +33,7 @@
 <!-- Welcome page -->
 <center>
 <div id="welcome" class="box">
-  <h1>Welcome!</h1>
+  <h2>Welcome!</h2>
   <div id ="welcomeMessage" class="message">
    </div>
   
@@ -62,7 +62,7 @@ function loginPage(message) {
   $('#loginMessage').html("")
   $('#welcomeMessage').html("")
   //init login page
-  if(message == 'default')message = "Please enter your credentials below";
+  if(message == 'default')message = "Please enter your login credentials.";
      $('#welcome').hide()
      $('#loginUsername').val("")
      $('#loginPassword').val("")
@@ -73,7 +73,7 @@ function loginPage(message) {
 function welcomePage(username, count) {
   $('#login').hide()
   $('#welcome').show()
-  $('#welcomeMessage').html("Welcome, "+  username +", you have logged in " + count + " times.")
+  $('#welcomeMessage').html("Hello there, "+  username +", you logged in " + count + " times.")
 
 }
 
@@ -98,13 +98,13 @@ function request(page, dict, success, failure) {
 
 function errcode(code) {
     if( code == ERR_BAD_CREDENTIALS) {
-        return ("Invalid username and password combination. Please try again. ");
+        return ("Invalid credentials. Please try again. ");
     } else if( code == ERR_BAD_USERNAME) {
-        return ("The user name should not be empty and at most 128 characters long. Please try again.");
+        return ("Invalid Username.  Usernames should not be empty and have, at most, 128 characters. Please try again.");
     } else if( code == ERR_USER_EXISTS) {
-        return ("This user name already exists. Please try again.");
+        return ("This username already exists!");
     } else if( code == ERR_BAD_PASSWORD) {
-        return ("The password should be at most 128 characters long. Please try again");
+        return ("Invalid Password. Passwords should be at most 128 characters long. Please try again");
     } 
 }
 
