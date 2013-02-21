@@ -29,7 +29,7 @@ border: 1px solid white;
 
 input[type="password"] {
 background: #000;
-height: 25px;
+margin: 10px 0;
 color: #808080;
 border: 1px solid white;
 -moz-border-radius: 5px;
